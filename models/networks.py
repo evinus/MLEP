@@ -1,5 +1,6 @@
 import tensorflow as tf
-import tensorflow.contrib.layers as tf_layers
+#import tensorflow.contrib.layers as tf_layers
+from tensorflow.keras import layers as tf_layers
 import numpy as np
 
 from models import pix2pix

@@ -2,7 +2,6 @@ import os
 import argparse
 import configparser
 
-import ipdb
 
 
 def get_dir(directory):
@@ -22,14 +21,14 @@ def parser_args():
     parser = argparse.ArgumentParser(description='Options to run the network.')
     parser.add_argument('-g', '--gpu', type=str, nargs='*', choices=['0', '1', '2', '3',
                                                                      '4', '5', '6', '7', '8', '9'], required=True,
-                        help='the device id of gpu.')
+                        help='the device id of gpu.',default="0")
     parser.add_argument('-i', '--iters', type=int, default=1,
                         help='set the number of iterations, default is 1')
     parser.add_argument('-b', '--batch', type=int, default=4,
                         help='set the batch size, default is 4.')
 
     parser.add_argument('-d', '--dataset', type=str,
-                        help='the name of dataset.')
+                        help='the name of dataset.',default="avenue")
 
     parser.add_argument('-o', '--output_dir', type=str, default="./data/pretrains",
                         help='the path of the output directory')

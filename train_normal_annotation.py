@@ -1,10 +1,11 @@
 import tensorflow as tf
 import os
 
-from models import prediction_networks_dict
+#from . import prediction_networks_dict
+from constant import const
+from models import *
 from utils.dataloaders.only_normal_loader import NormalDataLoader
 from utils.util import load, save, psnr_error
-from constant import const
 
 
 os.environ['CUDA_DEVICES_ORDER'] = "PCI_BUS_ID"

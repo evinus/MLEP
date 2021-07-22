@@ -136,8 +136,8 @@ class NormalDataLoader(BaseDataAbstractLoader):
         self.videos_info = self.parse_videos_folder(self.folder)
 
     def get_video_clip(self, video, start, end, interval=1):
-        # assert video_name in self._videos_info, 'video {} is not in {}!'.format(video_name, self._videos_info.keys())
-        # assert (start >= 0) and (start <= end) and (end < self._videos_info[video_name]['length'])
+         #assert video_name in self._videos_info, 'video {} is not in {}!'.format(video_name, self._videos_info.keys())
+         #assert (start >= 0) and (start <= end) and (end < self._videos_info[video_name]['length'])
 
         video_idx = np.arange(start, end, interval)
         video_clip = np.empty(shape=[len(video_idx), self.resize_height, self.resize_width, 3], dtype=np.float32)
