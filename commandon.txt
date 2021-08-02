@@ -2,3 +2,7 @@ python -m train_scripts.train_normal_annotation --dataset ped2 --prednet  cycleg
 
 
 python -m train_scripts.train_normal_annotation --dataset ped2 --gpu 0
+
+python -m train_normal_annotation --dataset ped2 --gpu 0
+
+py -3.6 -m venv venv
